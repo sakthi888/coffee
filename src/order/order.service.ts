@@ -6,7 +6,7 @@ import { UpdateOrderDto } from './dto/update-order.dto';
 export class OrderService {
   create(createOrderDto: CreateOrderDto) {
     console.log("Order has been received successully ...",createOrderDto);
-    return 'This action adds a new order';
+    return 'This action adds a new order for <var style="color:blue">' + createOrderDto.coffeeType + '</var> with Quantity of <var style="color:red">'+createOrderDto.quantity+' </var>';
   }
 
   findAll() {
